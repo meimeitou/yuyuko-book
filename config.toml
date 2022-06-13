@@ -1,0 +1,141 @@
+baseURL = "http://yuyuko.akua.wiki"
+languageCode = "zh-cn"
+title = "yuyuko-book"
+theme = "hugo-theme-relearn"
+defaultContentLanguageInSubdir= true
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  editURL = "https://github.com/roygbip/yuyuko-book/tree/master/content/"
+  themeVariant = "learn"
+  description = "yuyuko"
+  author = "TonyYin"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = false
+  disableLandingPageButton = true
+  disableSeoHiddenPages = true
+  disableMermaid = false
+  titleSeparator = "::"
+  collapsibleMenu = true
+
+
+[outputs]
+  home = ["HTML", "RSS", "PRINT", "JSON"]
+  section = ["HTML", "RSS", "PRINT"]
+  page = ["HTML", "RSS", "PRINT"]
+
+[Languages]
+[Languages.en]
+title = "yuyuko"
+weight = 3
+languageName = "English"
+landingPageURL = "/en"
+landingPageName = "<i class='fas fa-home'></i> Home"
+
+
+[Languages.zh]
+title = "yuyuko"
+weight = 1
+languageName = "简体中文"
+landingPageURL = "/zh"
+landingPageName = "<i class='fas fa-home'></i> 家"
+
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub 仓库"
+identifier = "ds"
+url = "https://github.com/roygbip/yuyuko-book"
+weight = 10
+
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> 展示区"
+url = "/showcase"
+weight = 11
+
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo 文档"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> 鸣谢"
+url = "/credits"
+weight = 30
+
+[Shortcuts-Title]
+other = "更多"
+
+[[menu.shortcuts]] 
+name = "<i class='fab fa-github'></i> Gitlab Repo"
+identifier = "ds"
+url = "https://github.com/roygbip/yuyuko-book"
+weight = 10
+target="_blank"
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ''
+    footnoteReturnLinkContents = ''
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'monokai'
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

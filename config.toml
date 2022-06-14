@@ -8,7 +8,7 @@ defaultContentLanguageInSubdir= true
   hrefTargetBlank = true
 
 [params]
-  editURL = "https://github.com/roygbip/yuyuko-book/tree/master/content/"
+  editURL = "https://github.com/roygbip/yuyuko-book/tree/main/content/"
   themeVariant = "learn"
   description = "yuyuko"
   author = "TonyYin"

@@ -16,3 +16,5 @@ pre = "<i class='fas fa-code'></i>  "
 1、[oidc.ppt](/ppt/oauth.html)
 
 2、[make-centos.ppt](/ppt/make-centos.html)
+
+3、[confluent-kafka](/ppt/confluent-kafka.html)

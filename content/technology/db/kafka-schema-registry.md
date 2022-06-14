@@ -46,35 +46,6 @@ Protobuf is easy to use in microservices, especially where performance and inter
 avro灵活，不需要编译。protobuf速度快。
 avro适合做大数据，protobuf适合微服务化应用。
 
-## 能做什么
+## api
 
-我们定义好schema后，可以统一生成序列化和反序列化的代码，在加上统一的消费生成框架（如：cloudevent）。
-那么项目的代码将只包含用户的逻辑代码，所有的序列化，反序列化，消息消费，生成都自动生成了。
-
-伪代码：
-```go
-// 实现interface
-// type consum interface {
-//     Consume(context.Content, SomeStruct)
-// }
-type UserDefineStruct struct {
-
-}
-func (UserDefineStruct) Consume(ctx context.Content, data SomeStruct) {
-  // 用户代码逻辑
-}
-```
-只需实现interface一个函数。框架将自动完成接收kafka数据，完成反序列化操作。
-
-生产端：
-
-```go
-// 用户代码， 组装SomeStruct
-data := SomeStruct{
-}
-// 调用自动生成的函数： Produce(ctx context.Content, data SomeStruct)
-// 发送数据
-Produce(ctx,data)
-```
-
-只需调用自动生成的Produce函数，就能完成序列化数据，发送kafka数据。
+[api文档](https://docs.confluent.io/platform/current/schema-registry/develop/api.html)

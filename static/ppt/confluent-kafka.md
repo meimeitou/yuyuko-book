@@ -62,6 +62,8 @@ Kafka Connect 是一款可扩展并且可靠地在 Apache Kafka 和其他系统�
 
 例如我现在想要把数据从MySQL迁移到ElasticSearch，为了保证高效和数据不会丢失，我们选择MQ作为中间件保存数据。
 
+[目前支持的connector](https://www.confluent.io/product/connectors/?_ga=2.103609222.749921388.1655176160-952692913.1651714879)
+
 ---
 ## 3. ksqldb and ksqldb-cli
 

@@ -102,10 +102,10 @@ centos镜像内容： http://mirror.grid.uchicago.edu/pub/linux/centos/7.9.2009/
 
 三、示例文档
 
-https://yuyuko.akua.wiki/en/technology/centos/kickstart/
+https://yuyuko.himecut.cc/en/technology/centos/kickstart/
 
 四、项目参考
- [make_centos](http://yuyuko.akua.wiki)
+ [make_centos](http://yuyuko.himecut.cc)
 
 补充：
 - kickstart中`$pre`和`$post`；
@@ -119,7 +119,7 @@ The comps file defines how the packages are bundled during the installation
 rpm安装捆绑管理文件
 
 二、项目参考
- [make_centos](http://yuyuko.akua.wiki)
+ [make_centos](http://yuyuko.himecut.cc)
 - 补充知识点：
   + iso当做rpm源；
 
@@ -146,11 +146,11 @@ rpmbuild
 
 三、详细参考
 
-https://yuyuko.akua.wiki/en/technology/centos/rpmbuild/
+https://yuyuko.himecut.cc/en/technology/centos/rpmbuild/
 
 四、项目参考
 
- [make_centos](http://yuyuko.akua.wiki)
+ [make_centos](http://yuyuko.himecut.cc)
 
 
 ---
@@ -158,4 +158,4 @@ https://yuyuko.akua.wiki/en/technology/centos/rpmbuild/
 
 完整项目
 
- [make_centos](http://yuyuko.akua.wiki)
+ [make_centos](http://yuyuko.himecut.cc)

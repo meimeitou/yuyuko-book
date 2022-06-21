@@ -75,7 +75,7 @@ ksqldb能做什么？
 - 实时用户个性化数据分析定制
 - 传感器及IoT数据处理
 
-[应用示例](http://yuyuko.akua.wiki/en/technology/db/ksql/)
+[应用示例](http://yuyuko.himecut.cc/en/technology/db/ksql/)
 
 ---
 ## 4. kafka-rest

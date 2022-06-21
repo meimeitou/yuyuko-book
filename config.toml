@@ -1,4 +1,4 @@
-baseURL = "http://yuyuko.akua.wiki"
+baseURL = "https://yuyuko.akua.wiki"
 languageCode = "zh-cn"
 title = "yuyuko-book"
 theme = "hugo-theme-relearn"
@@ -8,7 +8,7 @@ defaultContentLanguageInSubdir= true
   hrefTargetBlank = true
 
 [params]
-  editURL = "https://github.com/roygbip/yuyuko-book/tree/main/content/"
+  editURL = "https://github.com/meimeitou/yuyuko-book/tree/main/content/"
   themeVariant = "learn"
   description = "yuyuko"
   author = "TonyYin"
@@ -46,7 +46,7 @@ landingPageName = "<i class='fas fa-home'></i> 家"
 [[Languages.zh.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub 仓库"
 identifier = "ds"
-url = "https://github.com/roygbip/yuyuko-book"
+url = "https://github.com/meimeitou/yuyuko-book"
 weight = 10
 
 [[Languages.zh.menu.shortcuts]]
@@ -71,7 +71,7 @@ other = "更多"
 [[menu.shortcuts]] 
 name = "<i class='fab fa-github'></i> Gitlab Repo"
 identifier = "ds"
-url = "https://github.com/roygbip/yuyuko-book"
+url = "https://github.com/meimeitou/yuyuko-book"
 weight = 10
 target="_blank"
 

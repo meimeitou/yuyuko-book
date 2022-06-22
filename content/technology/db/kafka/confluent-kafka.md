@@ -5,6 +5,23 @@ description= "c kafka"
 weight = 1
 +++
 
+## 简介
+
+2014年，Kafka的创始人Jay Kreps、NahaNarkhede和饶军离开LinkedIn创立Confluent公司，专注于提供基于Kafka的企业级流处理解决方案，并发布了Confluent Kafka。Confluent Kafka分为开源版和企业版，企业版收费。
+
+Confluent Kafka开源版特性如下：
+- Confluent Kafka Connectors：支持Kafka Connect JDBC Connector、Kafka Connect HDFS Connector、Kafka Connect Elasticsearch Connector、Kafka Connect S3 Connector。
+- 多客户端支持：支持C/C++、Python、Go、.Net、Java客户端。
+- Confluent Schema Registry
+- Confluent Kafka REST Proxy
+-  ksql
+
+Confluent Kafka企业版特性如下：
+- Automatic Data Balancing
+- Multi-DataCenter Replication
+- Confluent Control Center
+
+## 快速开始
 
 启动2个broker的confluent kafka，企业版，试用期30天。企业版多了个control-centor管理中心。
 
@@ -219,4 +236,10 @@ services:
       KAFKA_REST_BOOTSTRAP_SERVERS: 'broker:29092'
       KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
       KAFKA_REST_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
+```
+
+启动：
+
+```shell
+docker compose up -d
 ```

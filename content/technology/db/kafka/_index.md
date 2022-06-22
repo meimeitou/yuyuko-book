@@ -1,10 +1,9 @@
 +++
-title = "存储/数据库"
+title = "kafka"
 date =  2021-03-03T14:51:08+08:00
-description= "存储"
-weight = 6
-alwaysopen = true
-pre= "<b>6. </b>"
+description= "kafka"
+weight = 1
+alwaysopen = false
 +++
 
 ### 内容：

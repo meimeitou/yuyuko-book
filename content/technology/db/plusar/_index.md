@@ -2,7 +2,8 @@
 title = "Pulsar"
 date =  2022-06-16T09:39:31+08:00
 description= "消息队列 Pulsar"
-weight = 5
+weight = 2
+alwaysopen = false
 +++
 
 # 消息队列 Pulsar

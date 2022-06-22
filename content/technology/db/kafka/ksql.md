@@ -17,7 +17,7 @@ weight = 2
 
 https://ksqldb.io/quickstart.html
 
-首先，需要[运行confluent kafka]({{%relref "technology/db/confluent-kafka.md" %}})测试环境
+首先，需要[运行confluent kafka]({{%relref "technology/db/kafka/confluent-kafka.md" %}})测试环境
 
 
 ### 1、Start ksqlDB's interactive CLI

@@ -69,7 +69,7 @@ weight = 30
 other = "更多"
 
 [[menu.shortcuts]] 
-name = "<i class='fab fa-github'></i> Gitlab Repo"
+name = "<i class='fab fa-github'></i> Github Repo"
 identifier = "ds"
 url = "https://github.com/meimeitou/yuyuko-book"
 weight = 10

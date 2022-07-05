@@ -2,7 +2,7 @@
 title = "System Clone"
 date =  2021-05-12T16:46:28+08:00
 description= "description"
-weight = 5
+weight = 4
 +++
 
 # 克隆恢复系统

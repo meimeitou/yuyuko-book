@@ -22,7 +22,10 @@ ppt: `https://github.com/marp-team/marp`
 
 新建：
 ```shell
+# 新增普通页
 hugo new ops/first.md
+# 新增章节主页
+hugo new --kind chapter ops/tools/_index.md
 ```
 
 ## ppt生成
@@ -37,3 +40,6 @@ marp工具扩展markdown，用markdown编辑ppt
 ## deploy
 
 更改config中的`baseURL`变量
+
+- static/css变更覆盖themes中的css
+- layouts变更页面元素

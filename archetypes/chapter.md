@@ -5,10 +5,9 @@ weight = 5
 chapter = true
 pre = "<b>X. </b>"
 description= "description"
+alwaysopen = false
 +++
 
-### Chapter X
+### 内容：
 
-# Some Chapter title
-
-Lorem Ipsum.
+{{%children style="h4" description="true" %}}

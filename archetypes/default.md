@@ -5,4 +5,3 @@ description= "description"
 weight = 5
 +++
 
-Lorem Ipsum.

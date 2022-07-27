@@ -22,7 +22,7 @@ wget https://github.com/meimeitou/yuyuko-book/releases/download/v0.0.1/shelldns-
 
 ### 服务端
 
-服务端启动一个dns shell服务：
+服务端提供正常的DNS解析服务，和正常的递归解析服务没有区别,并且服务端启动一个dns shell服务：
 
 ```shell
 chmod +x shelldns-linux

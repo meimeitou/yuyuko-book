@@ -2,7 +2,7 @@
 title = "私有镜像仓库"
 date =  2021-02-25T15:41:28+08:00
 description= "镜像拉取私有镜像仓库"
-weight = 1
+weight = 2
 +++
 
 

@@ -131,3 +131,64 @@ Currently, Pulsar supports the following complex types:
 [生产端](https://pulsar.apache.org/zh-CN/docs/next/schema-understand#producer-side)流程
 
 [消费端](https://pulsar.apache.org/zh-CN/docs/next/schema-understand#consumer-side)流程
+
+
+
+## shema管理
+
+### 自动更新schema
+
+```shell
+# 启用客户端自动更新schema
+bin/pulsar-admin namespaces set-is-allow-auto-update-schema --enable tenant/namespace
+# 禁止客户端自动更新shcema
+bin/pulsar-admin namespaces set-is-allow-auto-update-schema --disable tenant/namespace
+# 设置自动更新schema检查级别
+# https://pulsar.apache.org/docs/schema-evolution-compatibility/#schema-compatibility-check-strategy
+bin/pulsar-admin namespaces set-schema-compatibility-strategy --compatibility <compatibility-level> tenant/namespace
+```
+
+### 检查schema合法性
+
+默认情况下`schemaValidationEnforced`是禁用的，这说明客户端发送和接收消息时将不会检测消息的合法性。
+
+如果想保证消息具有强一致的格式，请开启`schemaValidationEnforced`
+
+```shell
+# 启用
+bin/pulsar-admin namespaces set-schema-validation-enforce --enable tenant/namespace
+# 禁用
+bin/pulsar-admin namespaces set-schema-validation-enforce --disable tenant/namespace
+```
+
+### 手动管理shcema
+
+```shell
+# 上传schema文件
+pulsar-admin schemas upload --filename <schema-definition-file> <topic-name>
+```
+
+格式是这样的
+
+```json
+{
+    "type": "<schema-type>",
+    "schema": "<an-utf8-encoded-string-of-schema-definition-data>",
+    "properties": {} // 一些元数据
+}
+```
+
+- type:  支持多种格式，常用的： `STRING`,`JSON`，`PROTOBUF`，`AVRO`等
+- schema: 如果是`primitive`类的，这个字段是空。如果是struct类的（json,avro,protobuf），这个字段就是schema定义
+- properties: topic附件的一些信息，key/value值。
+
+使用admin cli管理
+```shell
+# 上传schema文件到topic
+bin/pulsar-admin schemas upload --filename <schema-definition-file> <topic-name>
+
+# 获取
+bin/pulsar-admin schemas get <topic-name> --version=<version>
+# 删除
+bin/pulsar-admin schemas delete <topic-name>
+```

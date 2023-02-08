@@ -1,10 +1,9 @@
 +++
-title = "其它"
-date =  2021-02-24T12:08:03+08:00
-weight = 8
-description= "其它"
+title = "Ceph"
+date =  2022-10-19T11:03:17+08:00
+description= "description"
+weight = 6
 chapter= true
-pre= "<b>x. </b>"
 alwaysopen = false
 +++
 

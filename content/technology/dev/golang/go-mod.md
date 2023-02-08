@@ -2,7 +2,7 @@
 title = "Go Mod"
 date =  2021-03-04T18:17:17+08:00
 description= "go mod"
-weight = 5
+weight = 1
 +++
 
 1、代理设置

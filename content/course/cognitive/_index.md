@@ -5,6 +5,8 @@ description= "认知方法论"
 weight = 5
 +++
 
+《认知方法论》吴伯凡
+
 ### 列表
 
 {{%children depth="3" description="true" %}}

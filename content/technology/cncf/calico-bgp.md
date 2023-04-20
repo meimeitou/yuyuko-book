@@ -83,5 +83,5 @@ calicoctl patch BGPConfig default --patch \
 ## Exclude certain nodes from advertisement
 
 ```shell
-kubectl label node vm-pandora-kube-04 node.kubernetes.io/exclude-from-external-load-balancers=true
+kubectl label node vm-kube-04 node.kubernetes.io/exclude-from-external-load-balancers=true
 ```

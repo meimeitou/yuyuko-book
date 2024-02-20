@@ -1,10 +1,10 @@
 +++
-title = "开发"
-date =  2021-03-04T18:16:46+08:00
+title = "Rust"
+date = 2023-12-14T10:30:49+08:00
+weight = 3
+chapter = true
+pre = "<b>X. </b>"
 description= "description"
-weight = 5
-chapter= true
-pre= "<b>5. </b>"
 alwaysopen = false
 +++
 
